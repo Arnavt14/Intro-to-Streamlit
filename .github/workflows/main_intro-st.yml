@@ -28,7 +28,11 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run:  pip install matplotlib==3.5.2
+              pip install numpy==1.23.0
+              pip install scikit_learn==1.1.1
+              pip install streamlit==1.10.0
+
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
